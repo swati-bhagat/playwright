@@ -8,4 +8,6 @@ test('test', async ({ page }) => {
   await page.getByRole('banner').getByRole('img', { name: 'profile picture' }).click();
   await page.getByRole('menuitem', { name: 'Logout' }).click();
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+   await expect(page).toHaveURL("https://practice.expandtesting.com/secure")
+
 });
