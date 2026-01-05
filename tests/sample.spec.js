@@ -17,3 +17,6 @@ test("my fouth case",async function({page}){
 test("my fifth case",async function({page}){
     expect(false).toBeFalsy()
 })
+test("my fifth case",async function({page}){
+    expect(false).toBeTruthy()
+})
